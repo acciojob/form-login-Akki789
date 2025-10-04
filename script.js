@@ -1,11 +1,10 @@
-function getFormvalue(event) {
-  // stop the form from submitting and reloading the page
-  event.preventDefault();
-
-  // get values from the form fields
+function getFormvalue() {
+	let form = document.getElementById("#form1");
   const firstName = document.forms["form1"]["fname"].value;
   const lastName = document.forms["form1"]["lname"].value;
 
-  // show the full name
-  alert(firstName + " " + lastName);
+	form.addEventListener("submit", () =.{
+		alert(firstName + " " + lastName);
+	});
+  
 }
